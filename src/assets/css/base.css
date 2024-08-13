@@ -1,0 +1,46 @@
+@import"./normalize.css";
+
+:root {
+  --color-text:#666;
+  --color-high-text:#ff5777;
+  --color-tint:#ff8918;
+  --color-background:#fff;
+  --font-size:#14px;
+  --line-height:1.5;
+}
+
+*,
+*::before,
+*::after{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family:"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB", "Microsoft YaHei","微软黑雅",Arial,sans-serif;
+  user-select:none;
+  -webkit-tap-highlight-color: transparent;/* webkit是苹果浏览器引擎，tap点击，highlight背景高亮色color颜色泳数值调值 */
+  background-color: var(--color-background);
+  color: var(--color-text);
+  width: 100vw;/* 将元素的宽度设置为视口宽度（viewport width） */
+}
+
+a{
+  color: var(--color-text);
+  text-decoration: none;
+
+}
+
+.clear-fix{
+  zoom: 1; /* zoom在非IE浏览器中表现为支持放大或者缩小 zoom是一个非标准的css属性，它是不支持火狐浏览器的 */
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
